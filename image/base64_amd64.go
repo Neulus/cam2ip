@@ -3,7 +3,7 @@
 package image
 
 import (
-	"goost.org/encoding/base64"
+	"github.com/libgoost/encoding-base64"
 )
 
 func EncodeToString(src []byte) string {
