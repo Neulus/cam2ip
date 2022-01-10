@@ -9,8 +9,8 @@ import (
 
 	"github.com/jamiealquiza/envy"
 
-	"github.com/gen2brain/cam2ip/camera"
-	"github.com/gen2brain/cam2ip/server"
+	"github.com/Neulus/cam2ip/camera"
+	"github.com/Neulus/cam2ip/server"
 )
 
 const (

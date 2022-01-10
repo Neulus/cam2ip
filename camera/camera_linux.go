@@ -15,7 +15,7 @@ import (
 	"github.com/korandiz/v4l/fmt/mjpeg"
 	"github.com/pbnjay/pixfont"
 
-	im "github.com/gen2brain/cam2ip/image"
+	im "github.com/Neulus/cam2ip/image"
 )
 
 // Camera represents camera.

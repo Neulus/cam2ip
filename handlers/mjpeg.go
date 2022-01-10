@@ -9,8 +9,8 @@ import (
 	"net/textproto"
 	"time"
 
-	"github.com/gen2brain/cam2ip/image"
-	"github.com/gen2brain/cam2ip/reader"
+	"github.com/Neulus/cam2ip/image"
+	"github.com/Neulus/cam2ip/reader"
 )
 
 // MJPEG handler.

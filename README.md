@@ -16,37 +16,36 @@ You can also use apps like `ffplay` or `vlc`:
 
 ### Requirements
 
-* [libjpeg-turbo](https://www.libjpeg-turbo.org/) (use `-tags jpeg` to build without `CGo`)
-* On Linux/RPi native Go [V4L](https://github.com/korandiz/v4l) implementation is used to capture images.
-* On Windows [Video for Windows (VfW)](https://en.wikipedia.org/wiki/Video_for_Windows) framework is used over win32 API.
+- [libjpeg-turbo](https://www.libjpeg-turbo.org/) (use `-tags jpeg` to build without `CGo`)
+- On Linux/RPi native Go [V4L](https://github.com/korandiz/v4l) implementation is used to capture images.
+- On Windows [Video for Windows (VfW)](https://en.wikipedia.org/wiki/Video_for_Windows) framework is used over win32 API.
 
 ### Build tags
 
-* `cv2` - build with `OpenCV` 2.x ([go-opencv](https://github.com/lazywei/go-opencv))
-* `cv4` - build with `OpenCV` 4.x ([gocv](https://github.com/hybridgroup/gocv))
-* `jpeg` - build with native Go `image/jpeg` instead of `libjpeg-turbo`
+- `cv2` - build with `OpenCV` 2.x ([go-opencv](https://github.com/lazywei/go-opencv))
+- `cv4` - build with `OpenCV` 4.x ([gocv](https://github.com/hybridgroup/gocv))
+- `jpeg` - build with native Go `image/jpeg` instead of `libjpeg-turbo`
 
 ### Download
 
 Binaries are compiled with static OpenCV/libjpeg-turbo libraries, they should just work:
 
- - [Linux 64bit](https://github.com/gen2brain/cam2ip/releases/download/1.6/cam2ip-1.6-64bit.tar.gz)
- - [Linux 64bit OpenCV](https://github.com/gen2brain/cam2ip/releases/download/1.6/cam2ip-1.6-64bit-cv2.tar.gz)
- - [macOS 64bit OpenCV](https://github.com/gen2brain/cam2ip/releases/download/1.6/cam2ip-1.6-darwin-cv2.zip)
- - [RPi 32bit](https://github.com/gen2brain/cam2ip/releases/download/1.6/cam2ip-1.6-RPi.tar.gz)
- - [RPi 32bit OpenCV](https://github.com/gen2brain/cam2ip/releases/download/1.6/cam2ip-1.6-RPi-cv2.tar.gz)
- - [RPi 32bit Static](https://github.com/gen2brain/cam2ip/releases/download/1.6/cam2ip-1.6-RPi-nocgo.tar.gz)
- - [RPi3 32bit](https://github.com/gen2brain/cam2ip/releases/download/1.6/cam2ip-1.6-RPi3.tar.gz)
- - [RPi3 32bit OpenCV](https://github.com/gen2brain/cam2ip/releases/download/1.6/cam2ip-1.6-RPi3-cv2.tar.gz)
- - [Windows 32bit](https://github.com/gen2brain/cam2ip/releases/download/1.6/cam2ip-1.6-32bit.zip)
- - [Windows 32bit OpenCV](https://github.com/gen2brain/cam2ip/releases/download/1.6/cam2ip-1.6-32bit-cv2.zip)
- - [Windows 64bit](https://github.com/gen2brain/cam2ip/releases/download/1.6/cam2ip-1.6-64bit.zip)
- - [Windows 64bit OpenCV](https://github.com/gen2brain/cam2ip/releases/download/1.6/cam2ip-1.6-64bit-cv2.zip)
-
+- [Linux 64bit](https://github.com/Neulus/cam2ip/releases/download/1.6/cam2ip-1.6-64bit.tar.gz)
+- [Linux 64bit OpenCV](https://github.com/Neulus/cam2ip/releases/download/1.6/cam2ip-1.6-64bit-cv2.tar.gz)
+- [macOS 64bit OpenCV](https://github.com/Neulus/cam2ip/releases/download/1.6/cam2ip-1.6-darwin-cv2.zip)
+- [RPi 32bit](https://github.com/Neulus/cam2ip/releases/download/1.6/cam2ip-1.6-RPi.tar.gz)
+- [RPi 32bit OpenCV](https://github.com/Neulus/cam2ip/releases/download/1.6/cam2ip-1.6-RPi-cv2.tar.gz)
+- [RPi 32bit Static](https://github.com/Neulus/cam2ip/releases/download/1.6/cam2ip-1.6-RPi-nocgo.tar.gz)
+- [RPi3 32bit](https://github.com/Neulus/cam2ip/releases/download/1.6/cam2ip-1.6-RPi3.tar.gz)
+- [RPi3 32bit OpenCV](https://github.com/Neulus/cam2ip/releases/download/1.6/cam2ip-1.6-RPi3-cv2.tar.gz)
+- [Windows 32bit](https://github.com/Neulus/cam2ip/releases/download/1.6/cam2ip-1.6-32bit.zip)
+- [Windows 32bit OpenCV](https://github.com/Neulus/cam2ip/releases/download/1.6/cam2ip-1.6-32bit-cv2.zip)
+- [Windows 64bit](https://github.com/Neulus/cam2ip/releases/download/1.6/cam2ip-1.6-64bit.zip)
+- [Windows 64bit OpenCV](https://github.com/Neulus/cam2ip/releases/download/1.6/cam2ip-1.6-64bit-cv2.zip)
 
 ### Installation
 
-    go get -v github.com/gen2brain/cam2ip/cmd/cam2ip
+    go get -v github.com/Neulus/cam2ip/cmd/cam2ip
 
 This will install app in `$GOPATH/bin/cam2ip`.
 
@@ -82,6 +81,6 @@ Usage of cam2ip:
 
 ### Handlers
 
-  * `/html`: HTML handler, frames are pushed to canvas over websocket
-  * `/jpeg`: Static JPEG handler
-  * `/mjpeg`: Motion JPEG, supported natively in major web browsers
+- `/html`: HTML handler, frames are pushed to canvas over websocket
+- `/jpeg`: Static JPEG handler
+- `/mjpeg`: Motion JPEG, supported natively in major web browsers

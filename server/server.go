@@ -8,8 +8,8 @@ import (
 
 	"github.com/abbot/go-http-auth"
 
-	"github.com/gen2brain/cam2ip/handlers"
-	"github.com/gen2brain/cam2ip/reader"
+	"github.com/Neulus/cam2ip/handlers"
+	"github.com/Neulus/cam2ip/reader"
 )
 
 // Server struct.

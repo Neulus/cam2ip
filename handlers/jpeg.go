@@ -4,8 +4,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/gen2brain/cam2ip/image"
-	"github.com/gen2brain/cam2ip/reader"
+	"github.com/Neulus/cam2ip/image"
+	"github.com/Neulus/cam2ip/reader"
 )
 
 // JPEG handler.
